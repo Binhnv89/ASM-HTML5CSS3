@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/lienhe.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assect/plugin/fontawesome/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="">
+        </a>
+          <ul class="menu">
+            <li><a href="mazdacx8.html">NEW MAZDA CX-8</a></li>
+            <li><a href="sanpham.html">SẢN PHẨM</a></li>
+            <li><a href="muaxe.html">MUA XE</a></li>
+            <li><a href="">DỊCH VỤ</a></li>
+            <li><a href="">TIN TỨC</a></li>
+            <li><a href="">THƯƠNG HIỆU</a></li>
+          </ul>
+        </div>
+
+
+        
+        <div class="lienhe-header">
+            <div class="lienhe-header1">
+                <img src="" alt="" >
+                <h3>ĐĂNG KÍ LÁI THỬ</h3>
+                <p>Đăng ký và đặt lịch lái thử dòng xe bạn mong muốn tại đại lý gần nhất.</p>
+            </div>
+        <div class="form-laithu">
+            <h2 >XIN VUI LÒNG ĐIỀN THÔNG TIN BÊN DƯỚI. ĐẠI LÝ MAZDA GẦN BẠN NHẤT SẼ LIÊN HỆ VỚI BẠN SỚM</h2>
+            </div>
+       </div> 
+        
+        <div class="container">
+            <div class="form" >
+                <form action="" onsubmit="return kiem_tra()">
+                    <h1 style="color: #0071e3 ;font-size: 37px; text-align: center;"> Đăng ký lái thử</h1>
+               
+        
+                    <div class="form-group">
+                    <label for="" class="fullname">Họ Và Tên</label> 
+                    <input type="text" name ="fullname" id="fullname" placeholder="VD: Nguyễn Văn Bình"onkeyup="kiem_tra()" >
+                    <span class="form-massage"></span>
+                   </div>
+
+                   <div class="form-group">
+                    <label for="" class="masv">Số điện thoại</label> 
+                    <input type="text" name ="masv" id="masv" placeholder="VD: 0388737498" onkeyup="kiem_tra()" >
+                    <span class="form-massage"></span>
+                   </div>
+    
+               
+    
+                   <div class="form-group">
+                    <label for="" class="enail">Email</label> 
+                    <input type="text" name ="email" id="email" placeholder="VD:binhnvph33903@fpt.edu.vn"onkeyup="kiem_tra()" >
+                    <span class="form-massage"></span>
+                   </div>
+                   
+                                  
+                   <div class="form-group">
+                    <label for="" class="sex">Giới Tính</label>
+                    <div class="boc">                 
+                        <input type="radio" name="sex" id="nam" onclick="kiem_tra()" ><label for="nam"> Nam</label>
+                        <input type="radio" name="sex" id="nu"onclick="kiem_tra()"><label for="nu"> Nữ</label>
+                    </div>
+                    <span class="form-massage"></span>
+                   </div>
+    
+                    <div class="form-group">
+                    <label for="" class="hobby">Loại xe</label>
+                    <div class="boc">                 
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()" > MAZDA 2<br>
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()"> MAZDA 3<br>
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()"> MAZDA 5<br>
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()"> MAZDA CX-3<br>
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()"> MAZDA CX-5<br>
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()"> MAZDA CX-8<br>
+                        <input type="checkbox" name="hobby" id="hobby" onclick="hien_thi()"> Hãng xe khác <br>
+                      
+                        <div class="hobby-defferent"  style="display:none" >
+                           
+                            <textarea name="" id="" cols="58" rows="3"placeholder="Hãng xe khác"></textarea>
+                        </div>
+    
+                    </div>
+                    <span class="form-massage"></span>
+                   </div> 
+    
+    
+    
+                   <div class="form-group">
+                    <label for="" class="">Khu vực lái thử</label>
+                              
+                        <select name="quocTich" id="quocTich"  name="TenDanhSach">
+                            <option value="">Chọn Khu vực</option>
+                            <option value="1">Hà Nội</option>
+                            <option value="2" >Thành phố Hồ Chí Minh</option>
+                            <option value="3">Hải Phòng</option>
+                            <option value="4">Cần Thơ</option>
+                            <option value="5">Đà Nẵng</option>
+                            <option value="6">Thanh Hóa</option>
+                            <option value="7">Nghệ An</option>
+                            <option value="8">Quảng Ninh</option>
+                            <option value="9">Cà Mau</option>
+                            <option value="10">Khánh Hòa</option>
+                            <option value="11">Hà Giang</option>
+                            <option value="12">Buôn Mê Thuột</option>
+                            
+                    
+                        </select>
+                    
+                    <span class="form-massage"></span>
+                   </div>
+    
+    
+                   <div class="form-group">
+                    <label for="" class="ghi-chu">Ghi Chú</label>
+                    <textarea name="note" id="note" cols="20" rows="4" style="border: 1px solid #d6d6d6;" placeholder="ghi chú không quá 200 ký tự"></textarea>
+                    <span class="form-massage"></span>
+                   </div>
+                   
+                   <button class="bt-submit">Đăng ký</button>
+                   <span class="dk_thanhcong" style="display: none;"> Đăng Ký Thành Công</span>  
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-mazda">
+              <div class="footer-name-1">
+               <h6>CÔNG TY TNHH PHÂN PHỐI FPT Education</h6><br>
+               <p>Giấy CNĐKDN: 400077880 Ngày cấp 27/10/2010</p><br>
+               <p>Cơ quan cấp: Phòng đăng ký kinh doanh Sở kế hoạch và đầu tư Thành Phố Hà Nội</p><br>
+               <p>Địa chỉ: Tòa nhà FPT Polytechnic, phố Trịnh Văn Bô, phường Phương Canh, quận Nam Từ Liêm, TP Hà Nội</p><br>
+               <img src="img/xacnhan.png" alt="" width="150px">
+              </div>
+    <!--  -->
+              <div class="footer-name-2">
+                <h5>SẢN PHẨM</h5><br>
+                <p>Mazda2</p><br>
+                <p>Mazda2 Sport</p><br>
+                <p>Mazda3</p><br>
+                <p>Mazda3 Sport</p><br>
+                <p>Mazda6</p><br>
+                <p>Mazda CX-5</p><br>
+                <p>Mazda CX-8</p><br>
+                <p>Mazda BT-50</p><br>
+              </div>
+    
+    <!--  -->
+              <div class="footer-name-3">
+                <h5>DỊCH VỤ BÁN HÀNG</h5><br>
+                <p>Dịch vụ bán hàng</p><br>
+                <p>Phụ tùng - Phụ kiện</p><br>
+                <p>Chăm sóc khách hàng</p><br>
+                <p>Đặt hẹn dịch vụ</p><br>
+    
+                <h6>CHÍNH SÁCH</h6><br>
+                <p>Chính sách Thanh toán</p><br>
+                <p>Chính sách Bảo mật</p><br>
+                <p>Chính sách giao nhận - vận chuyển</p><br>
+              </div>
+    
+    
+    <!--  -->
+              <div class="footer-name-4">
+                <h5>LIÊN HỆ VỚI CHÚNG TÔI</h5>
+                <i class="fa-solid fa-phone"></i>
+                <a>Hotline: 0388737498</a><br>
+                <i class="fa-solid fa-envelope"></i>
+                <a>binhnvph33903@fpt.edu.vn</a><br>
+                <img class="img-1" src="img/fb.png" alt="" style="display: inline-block;"><br>
+                <img class="img-1" src="img/yt.png" alt="" style="display: inline-block;"><br>
+                <img class="img-1" src="img/intagram.png" alt="" style="display: inline-block;"><br>
+              </div>
+           </div>
+          </div>
+    </div>
+    
+
+
+    <script src="js/lienhe.js"></script>
+</body>
+</html>
+    </div>
+
+</body>
+</html>
